@@ -1,0 +1,12 @@
+<h1>insertar Personaje</h1>
+<form #modifcarForm="ngForm">	
+    <select #selectSerie name="selectSerie">
+    <option *ngFor="let s of series" value="{{s.idSerie}}">{{s.nombre}}</option>
+    </select> 
+    <br/>  
+    <select #selectPersonajes name="selectPersonajes">
+    <option *ngFor="let p of personajes" value="{{p.idPersonaje}}">{{p.nombre}}</option>
+    </select> 
+    <br/>       
+    <button class="btn btn-warning" (click)="updatePersonaje()">Modifcar Personaje</button>
+</form>

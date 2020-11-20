@@ -1,0 +1,22 @@
+<h1>Personajes:</h1>
+<div *ngIf="personajes.length > 0">	
+	<table class="table table-striped">
+	<thead>
+	<tr>
+	<th>Id Personaje</th>
+	<th>Nombre</th>
+	<th>Imagen</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr *ngFor="let p of personajes">
+	<td>{{p.idPersonaje}}</td>
+	<td>{{p.nombre}}</td>
+	<td>
+        <img src="{{p.imagen}}" style="height: 50px; width: 50px;"/>
+    </td>
+	</tr>
+	</tbody>
+	</table>
+	</div>
+

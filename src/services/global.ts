@@ -1,1 +1,3 @@
-export var Global ={}
+export var Global ={
+    ulr:"https://apiseriespersonajes.azurewebsites.net"
+}

@@ -1,0 +1,11 @@
+<div *ngIf="serie !=undefined">
+    <h1>Detalles de la serie: {{serie.nombre}}</h1>
+    <img src="{{serie.imagen}}" style="height: 150px; width: 150px;"/>
+    <p>{{serie.puntuacion}}</p>
+    <a [routerLink]="['/personajes',serie.idSerie]">Personajes</a>
+</div>
+
+
+
+
+   
